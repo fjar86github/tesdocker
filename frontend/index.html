@@ -1,4 +1,15 @@
-FROM nginx:alpine
-
-# Copy frontend files
-COPY ./frontend /var/www/frontend/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Web Application</h1>
+    <p id="message"></p>
+    <button onclick="fetchData()">Fetch Data</button>
+    <script src="script.js"></script>
+</body>
+</html>
